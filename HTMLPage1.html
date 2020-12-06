@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body
+        {
+            background-color:dimgray;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 0;
+        }
+        .navbar{
+            overflow:hidden;
+            background-color:#ffffff
+        }
+        .navbar a
+        {
+            float :left;
+            display:block;
+            padding:14px 20px;
+            text-align:centre;
+            background:#labc9c;
+            color:black;
+        }
+        .navbar a.right{
+            float:right;
+        }
+        .navbar a:hover{
+            background-color:aqua;
+            color:black;
+        }
+        #form1 {
+            box-sizing: border-box;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            resize: vertical;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+       
+
+           
+
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        #SUBMIT {
+            position: absolute;
+            top: 87%;
+            left: 80%;
+            background-color: black;
+            color: white;
+            border-color: #ff0000;
+            border: 1px solid red;
+            padding:0.5%;
+            font-size:80%
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            <a href="#">Cakery</a>
+            <a href="#">Home</a>
+            <a href="#">gallery</a>
+            <a href="#">reviews</a>
+            <a href="#">contact us</a>
+            <a href="#" class="right">login</a>
+            <a href="#" class="right">sign up</a>
+        </div>
+        <h2>Review form</h2>
+
+        <div class="container">
+            <form id="form1">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="restaurants">Restaurant</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="restaurants" name="restaurants" placeholder="Restaurant name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="review" name="review" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="right" id="SUBMIT" href="HTMLPage2.html">SUBMIT</a>
+                </div>
+                </div>
+        </form>
+        </div>
+
+
+    </body>
+        </html >
